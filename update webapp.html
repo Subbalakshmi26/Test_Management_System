@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block start %}
+ 
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  .text{
+    color: green;
+    font-weight: bold;
+  }
+</style>
+ 
+<div class="container mt-5">
+ 
+  <form class="col-6 mx-auto card p-3 shadow-lg" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <h2 class="text  text-center"> app</h2>
+     
+    <h>Update webapp</h>
+    <hr>
+    <div class="form-group">
+      <label for="exampleInputEmail1">webapp name</label>
+      <input name="webapp" value="{{webapp.webapp}}" type="text" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">webapp</label>
+      <textarea name="webapp" value="" class="form-control"
+        required>{{<webapp class="web"></webapp>_description}}</textarea>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">web Image</label>
+      <input name="web" type="file" class="form-control">
+    </div>
+ 
+    <button type="submit" class="btn btn-success">Update web</button>
+  </form>
+ 
+ 
+</div>
+ 
+{% endblock %}
