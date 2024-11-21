@@ -1,0 +1,8 @@
+•	This is a Test Management System is a web application That allows users to manage test data
+•	By using Django, We can implement features such as user authentication(login).
+•	CRUD operations such as Create, Read, Update, Delete.
+•	Templates for listing tests, viewing details, creating/editing forms and user login.
+•	Users can filter tasks by status.
+•	Users can register, log in, and have access to different features .
+
+
